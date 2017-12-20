@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author 	Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
+ * @score	100%
+ */
 public class PassingCars {
 
 	public int solution(int[] A) {

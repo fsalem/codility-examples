@@ -1,19 +1,31 @@
-
+/**
+ * You need to read this proof in advance to understand the solution. THIS IS NOT TRIVIAL AT ALL
+ * @author 	Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
+ * @score	100%	
+ *
+ */
 public class MinAvgTwoSlice {
 	public int solution(int[] A){
-		int[] sum = new int[A.length-1];
-		sum[A.length-2] = A[A.length-1]+A[A.length-2]; 
-		for (int i=A.length-3 ; i>=0 ; i--){
-			sum[i] = A[i]+sum[i+1];
-		}
 		int indx=0;
-		int avg = sum[0]/A.length;
-		int tmp;
-		for (int i=1 ; i<sum.length ; i++){
-			tmp = sum[i]/(A.length-i);
+		double avg = 0;
+		for (int i=0 ; i<A.length ; i++){
+			avg+=A[i];
+		}
+		avg /= A.length;
+		double tmp;
+		for (int i=0 ; i<A.length-1 ; i++){
+			tmp= (A[i]+A[i+1])/2.0;
 			if (tmp < avg){
 				avg = tmp;
 				indx = i;
+			}
+			if (i < A.length - 2){
+				tmp= (A[i]+A[i+1]+A[i+2])/3.0;
+				if (tmp < avg){
+					avg = tmp;
+					indx = i;
+				}
 			}
 		}
 		return indx;

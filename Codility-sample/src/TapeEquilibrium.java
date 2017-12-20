@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author 	Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+ * @score	100%
+ */
 public class TapeEquilibrium {
 	public int solution(int[] A) {
 		int[] P = new int[A.length];

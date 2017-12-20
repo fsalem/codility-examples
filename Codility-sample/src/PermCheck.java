@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author 	Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
+ * @score	100%
+ */
 public class PermCheck {
 
 	public int solution(int[] A) {

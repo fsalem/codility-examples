@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author  Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
+ * @score	100%
+ */
 public class GenomicRangeQuery {
 	public int[] solution(String S, int[] P, int[] Q) {
 		int[][] count = new int[3][S.length() + 1];

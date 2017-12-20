@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author 	Farouk Salem
+ * @URL		https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/
+ * @score	100%
+ */
 public class CountDiv {
 
 	public int solution(int A, int B, int K){
